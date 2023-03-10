@@ -1,0 +1,99 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Krona+One&family=Montserrat:wght@400;600&family=Roboto+Mono:wght@700&display=swap');
+
+body {
+    background-color: #000000;
+    color: #f6f6f6;
+    height: 100vh; /*(Utilizar 100% da tela)*/
+    box-sizing: border-box; /*(Mantém o elemento filho sempre dentro do pai)*/
+} 
+
+.apresentacao {
+    display: flex; /*(Dando inicio ao uso da FlexBox)*/
+    align-items: center; /*(Alinhar o conteudo ao centro tendo como metrica o conteudo com maior altura)*/
+    justify-content: center;
+    margin: 0 15%;
+}
+
+.imagem {
+    display: flex;
+    align-items: center;
+    margin-top: 120px;
+}
+
+.tituloDestaque {
+    color: #22D4FD;
+}
+
+.apresentacao__conteudo {
+    height: 482px;
+    width: 615px;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.apresentacao__titulo {
+    font-family: 'Krona One';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 56px;
+}
+
+.apresentacao__paragrafo {
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 36px;
+}
+
+.apresentacao__botao {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+}
+
+.subtitulo {
+    font-family: 'Krona One';
+    font-weight: 400;
+    font-size: 24px;
+}
+
+.link {
+    display: flex;
+    justify-content: center;
+    gap: 16px;
+    width: 368px;
+    text-align: center;
+    border: 2px #22d4fd solid;
+    border-radius: 8px;
+    font-size: 24px;
+    padding: 22px 0;
+    color: #f6f6f6;
+    text-decoration: none;
+    font-family: 'Montserrat';
+    font-weight: 600;
+}
+
+.img {
+    width: 30px;
+    height: 30px;
+}
+
+.link:hover {
+    background-color: #272727;
+    padding: 3%
+}
+
+.rodape {
+    display: flex;
+    justify-content: center;
+    background-color: #22D4FD;
+    color: #272727;
+    padding: 10px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+}
