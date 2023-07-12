@@ -1,35 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@600&family=Krona+One&family=Montserrat:wght@400;600&family=Roboto+Mono:wght@700&display=swap');
 
+:root {
+    --cor-primaria: #000000; /*uso de variaveis no css*/
+    --cor-segundaria: #f6f6f6;
+    --cor-terciaria: #22d4fd;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
 body {
-    background-color: #000000;
-    color: #f6f6f6;
+    
+    background-color: var(--cor-primaria);
+    color: var(--cor-segundaria);
     height: 100vh; /*(Utilizar 100% da tela)*/
     box-sizing: border-box; /*(Mantém o elemento filho sempre dentro do pai)*/
 } 
+
+.cabecalho{
+    padding: 2% 0% 0% 20%;
+}
+
+.cabecalho__menu{
+    display: flex;
+    gap: 80px;
+}
+
+.menu__link{
+    color: var(--cor-terciaria);
+    font-family: 'Montserrat';
+    font-weight: 600;
+    text-decoration: none;
+}
 
 .apresentacao {
     display: flex; /*(Dando inicio ao uso da FlexBox)*/
     align-items: center; /*(Alinhar o conteudo ao centro tendo como metrica o conteudo com maior altura)*/
     justify-content: center;
-    margin: 0 15%;
+    margin: 5% 15%;
+    gap: 10%;
 }
 
 .imagem {
     display: flex;
     align-items: center;
-    margin-top: 120px;
+    max-width:500px;
+    width: auto;
+    border-radius: 7%;
 }
 
 .tituloDestaque {
-    color: #22D4FD;
+    color: var(--cor-terciaria);
 }
 
 .apresentacao__conteudo {
-    height: 482px;
     width: 615px;
+    gap: 10px;
     display: flex;
-    flex-direction: column;
-    gap: 40px;
+    flex-direction: column; 
 }
 
 .apresentacao__titulo {
@@ -68,7 +98,7 @@ body {
     gap: 16px;
     width: 368px;
     text-align: center;
-    border: 2px #22d4fd solid;
+    border: 2px var(--cor-terciaria) solid;
     border-radius: 8px;
     font-size: 24px;
     padding: 22px 0;
@@ -88,11 +118,20 @@ body {
     padding: 3%
 }
 
+.experiencias_descricao{
+    color: gray;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+}
+
 .rodape {
     display: flex;
     justify-content: center;
-    background-color: #22D4FD;
+    background-color: var(--cor-terciaria);
     color: #272727;
+    margin-top: 50PX;
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
