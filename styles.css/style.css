@@ -47,8 +47,9 @@ body {
     display: flex;
     align-items: center;
     max-width:500px;
-    width: auto;
+    width: 50%;
     border-radius: 7%;
+    
 }
 
 .tituloDestaque {
@@ -56,7 +57,7 @@ body {
 }
 
 .apresentacao__conteudo {
-    width: 615px;
+    width: 50%;
     gap: 10px;
     display: flex;
     flex-direction: column; 
@@ -66,7 +67,7 @@ body {
     font-family: 'Krona One';
     font-style: normal;
     font-weight: 400;
-    font-size: 36px;
+    font-size: 2.25rem; /*rem é uma medida relativa - acompanha a unidade de medida do navegador*/
     line-height: 56px;
 }
 
@@ -74,7 +75,7 @@ body {
     font-family: 'Montserrat';
     font-style: normal;
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
     line-height: 36px;
 }
 
@@ -89,18 +90,18 @@ body {
 .subtitulo {
     font-family: 'Krona One';
     font-weight: 400;
-    font-size: 24px;
+    font-size: 1.5rem;
 }
 
 .link {
     display: flex;
     justify-content: center;
     gap: 16px;
-    width: 368px;
+    width: 50%;
     text-align: center;
     border: 2px var(--cor-terciaria) solid;
     border-radius: 8px;
-    font-size: 24px;
+    font-size: 1.5rem;
     padding: 22px 0;
     color: #f6f6f6;
     text-decoration: none;
@@ -120,7 +121,7 @@ body {
 
 .experiencias_descricao{
     color: gray;
-    font-size: 20px;
+    font-size: 1rem;
     text-decoration: none;
     font-family: 'Montserrat', sans-serif;
     font-weight: 400;
@@ -135,4 +136,26 @@ body {
     padding: 10px;
     font-family: 'Montserrat', sans-serif;
     font-weight: 600;
+}
+
+@media (max-width: 1300px) { /*@media serve para aplicar responsividade na pagina quando o tamanho da tela diminui*/
+    .cabecalho{
+        padding: 6%;
+    
+    }
+
+    .cabecalho__menu {
+        justify-content: center;
+    }
+    
+    .apresentacao {
+        flex-direction: column-reverse;
+        gap: 10%;
+        padding: 5%;
+    }
+
+    .apresentacao__conteudo  {
+        width: auto;
+    }
+    
 }
